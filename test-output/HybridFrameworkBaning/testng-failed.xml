@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HybridFrameworkBaning]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.banking.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="BankingApp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.banking.testcases.TC_AddCustomerTest_003">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="addNewCustomer"/>
+        </methods>
+      </class> <!-- com.banking.testcases.TC_AddCustomerTest_003 -->
+      <class name="com.banking.testcases.TC_LoginDataDriven_002">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginDataDriven" invocation-numbers="1 2"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.banking.testcases.TC_LoginDataDriven_002 -->
+    </classes>
+  </test> <!-- BankingApp Test(failed) -->
+</suite> <!-- Failed suite [HybridFrameworkBaning] -->

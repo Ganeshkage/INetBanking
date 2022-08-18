@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HybridFrameworkBaning">
+  
+  	<listeners>
+  		<listener class-name="com.banking.utilities.Reporting"></listener>
+  	</listeners>
+  <test name ="BankingApp Test">
+  	<parameter name="browser" value="chrome"></parameter>
+  		<classes>
+  	 		<class name="com.banking.testcases.TC_LoginTest_001"></class>
+		 	<class name="com.banking.testcases.TC_LoginDataDriven_002"></class>
+  			<class name="com.banking.testcases.TC_AddCustomerTest_003"></class>
+  		</classes>
+  </test>
+
+</suite> 
